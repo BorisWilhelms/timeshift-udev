@@ -1,0 +1,9 @@
+[Unit]
+Description=Backup action
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/timeshift --create --comments 'Auto-Backup'
+
+[Install]
+WantedBy=multi-user.target

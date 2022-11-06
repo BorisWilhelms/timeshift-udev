@@ -1,0 +1,1 @@
+ACTION=="add", KERNEL=="sd*[0-9]", ENV{ID_FS_UUID_ENC}=="3237cd2c-efa7-4c54-8fca-762ba80667ad", TAG+="systemd", ENV{SYSTEMD_WANTS}+="timeshift.service"
