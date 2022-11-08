@@ -1,0 +1,5 @@
+#! /bin/sh
+
+notify-send "Timeshift backup" "Starting via udev"
+/usr/bin/timeshift --create --comments 'Auto-Backup'
+notify-send "Timeshift backup" "Done"

@@ -1,6 +1,6 @@
 install:
-	cp /src/timeshift.service /usr/lib/systemd/system/timeshift.service
-	cp /src/zz-timeshift.rules /etc/udev/rules.d/zz-timeshift.rules
+	cp ./src/timeshift.service /usr/lib/systemd/system/timeshift.service
+	cp ./src/zz-timeshift.rules /etc/udev/rules.d/zz-timeshift.rules
 	systemctl enable timeshift
 
 uninstall:
